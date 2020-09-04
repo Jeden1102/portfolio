@@ -8,40 +8,47 @@
 
 /*Side Menu*/
 .side-menu {
-  width: 300px;
-  height: 100vh;
-  position: absolute;
-  right: -240px;
-  top: 0;
-  background: white;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #FC3949;
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: .6s;
   transition: .6s;
 }
 
 .side-menu ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .side-menu ul li {
-  width: 100%;
+  width: 25%;
   font-size: 2rem;
-  line-height: 70px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  text-align: center;
+  border-right: 1px dotted white;
+  height: 100%;
 }
 
 .side-menu ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .side-menu ul li i {
-  margin: 0 10px;
+  margin: 10px 0;
   font-size: 2.3rem;
   color: #283036;
-  width: 50px;
+  width: 100%;
 }
 
 .opened-navbar {
@@ -60,6 +67,7 @@ body {
   font-family: 'Adam normal';
   overflow-x: hidden !important;
   max-width: 100vw !important;
+  min-height: 200vh;
 }
 
 .container {
@@ -160,6 +168,22 @@ body {
 @media (min-width: 951px) {
   .side-menu {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .side-menu ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .side-menu ul li {
+    font-size: 1.2rem;
+    width: 28%;
+  }
+  .side-menu ul li:first-child {
+    width: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */

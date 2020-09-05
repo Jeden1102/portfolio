@@ -28,7 +28,6 @@ $second-color:#FC3949;
             font-size:2rem;
             flex:none;
             text-align:center;
-            border-right:1px dotted rgb(38, 238, 48);
             height:100%;
         a{
             color:white;
@@ -66,7 +65,7 @@ body{
     background:$base-color;
 }
 .logo{
-    color:white;
+    color:$base-color;
     font-size:3rem;
     letter-spacing:2px;
     position: absolute;
@@ -78,7 +77,7 @@ body{
     }
     a{
         text-decoration:none;
-        color:white;
+        color:$base-color;
         
     &::after{
         position: absolute;
@@ -108,7 +107,8 @@ body{
             margin:0 20px;
             font-size:1.3rem;
             a{
-                color:white;
+                color:$base-color;
+                font-weight:700;
                 text-decoration:none;
                 position: relative;
                 
@@ -116,7 +116,7 @@ body{
                 position: absolute;
                 content:'';
                 width:0px;
-                height:2px;
+                height:1px;
                 background:none;
                 bottom:-5px;
                 left:0px;
@@ -139,6 +139,18 @@ body{
     }
     .side-menu{
         display:block;
+    }
+    .wave{
+        display:none;
+    }
+    .logo{
+        width:100%;
+        text-align:center;
+        margin:0;
+        padding:0;
+        a{
+            color:white;
+        }
     }
 }
 @media(min-width:951px){

@@ -35,7 +35,6 @@
       -ms-flex: none;
           flex: none;
   text-align: center;
-  border-right: 1px dotted #26ee30;
   height: 100%;
 }
 
@@ -80,7 +79,7 @@ body {
 }
 
 .logo {
-  color: white;
+  color: #283036;
   font-size: 3rem;
   letter-spacing: 2px;
   position: absolute;
@@ -94,7 +93,7 @@ body {
 
 .logo a {
   text-decoration: none;
-  color: white;
+  color: #283036;
 }
 
 .logo a::after {
@@ -133,7 +132,8 @@ body {
 }
 
 .home-container-navbar ul li a {
-  color: white;
+  color: #283036;
+  font-weight: 700;
   text-decoration: none;
   position: relative;
 }
@@ -142,7 +142,7 @@ body {
   position: absolute;
   content: '';
   width: 0px;
-  height: 2px;
+  height: 1px;
   background: none;
   bottom: -5px;
   left: 0px;
@@ -162,6 +162,18 @@ body {
   }
   .side-menu {
     display: block;
+  }
+  .wave {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .logo a {
+    color: white;
   }
 }
 

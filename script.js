@@ -12,3 +12,27 @@ function openNavbar(){
         isOpened=0;
     }
 }
+
+var skill = document.querySelector('.skill')
+var buttonOne  = document.querySelector('#buttonOne')
+var buttonTwo  = document.querySelector('#buttonTwo')
+var buttonThree  = document.querySelector('#buttonThree')
+
+function changeSkill(){
+    skill.innerHTML="Front-End-Developer"
+    buttonOne.style.background="#FC3949";
+    buttonTwo.style.background="white";
+    buttonThree.style.background="white";
+}
+function changeSkillTwo(){
+    skill.innerHTML="Graphic UI/UX Designer"
+    buttonOne.style.background="white";
+    buttonTwo.style.background="#FC3949";
+    buttonThree.style.background="white";
+}
+function changeSkillThree(){
+    skill.innerHTML="Movie Editor"
+    buttonOne.style.background="white"
+    buttonTwo.style.background="white"
+    buttonThree.style.background="#FC3949";
+}

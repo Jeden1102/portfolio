@@ -70,12 +70,19 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 100vw !important;
   min-height: 100vh;
 }
 
 .home-container {
   background: #283036;
+  width: 100vw !important;
+}
+
+.home-container #home-image {
+  position: absolute;
+  right: 15%;
+  bottom: 8%;
 }
 
 .logo {
@@ -155,25 +162,87 @@ body {
   background: #FC3949;
 }
 
+.home-container-hello {
+  width: 35vw;
+  height: 30vh;
+  margin-left: 250px;
+  margin-top: -100px;
+}
+
+.home-container-hello h2 {
+  color: white;
+  font-size: 4em;
+}
+
+.home-container-hello button {
+  width: 40px;
+  height: 40px;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+
+.home-container-hello .skills-container {
+  margin: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-container-hello .skills-container .skill {
+  color: white;
+  font-size: 2rem;
+}
+
+.home-container-hello #buttonOne {
+  background: #FC3949;
+}
+
 /*MEDIA QUERIES*/
+@media (max-width: 1275px) {
+  .home-container #home-image {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+  }
+}
+
 @media (max-width: 950px) {
   .home-container-navbar {
     display: none;
   }
   .side-menu {
     display: block;
+    width: 100vw !important;
   }
   .wave {
     display: none;
   }
   .logo {
-    width: 100%;
     text-align: center;
     margin: 0;
     padding: 0;
   }
   .logo a {
     color: white;
+  }
+  body {
+    overflow-x: hidden !important;
+    width: 100vw !important;
+  }
+  .home-container #home-image {
+    bottom: 10%;
+  }
+  .home-container-hello {
+    width: 70vw;
+    margin-left: 0;
+    -webkit-transform: translateY(220px);
+            transform: translateY(220px);
   }
 }
 
@@ -187,6 +256,40 @@ body {
   .side-menu ul li {
     font-size: 1.5rem;
   }
+  .home-container #home-image {
+    bottom: 7%;
+    left: 20%;
+  }
+  .home-container-hello {
+    width: 100vw;
+    -webkit-transform: translate(0, 220px);
+            transform: translate(0, 220px);
+  }
+  .home-container-hello h2 {
+    text-align: center;
+  }
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -196,6 +299,12 @@ body {
   }
   .side-menu ul li:first-child {
     width: 20%;
+  }
+  .home-container #home-image {
+    bottom: 4%;
+    left: 7%;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 /*# sourceMappingURL=style.css.map */

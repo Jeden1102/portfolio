@@ -58,11 +58,17 @@ body{
     min-height:200vh;
 }
 .container{
-    width:100%;
+    width:100vw !important;
     min-height:100vh;
 }
 .home-container{
     background:$base-color;
+    width:100vw !important;
+    #home-image{
+        position: absolute;
+        right:15%;
+        bottom:8%;
+    }
 }
 .logo{
     color:$base-color;
@@ -131,26 +137,82 @@ body{
         
     }
 }
-
+.home-container-hello{
+    width:35vw;
+    height:30vh;
+    margin-left:250px;
+    margin-top:-100px;
+    h2{
+        color:white;
+        font-size:4em;
+    }
+    button{
+        width:40px;
+        height:40px;
+        background:white;
+        outline:none;
+        border:none;
+        border-radius:50%;
+        margin:10px 30px;
+        cursor: pointer;
+    }
+    .skills-container{
+        margin:40px;
+        display:flex;
+        .skill{
+            color:white;
+            font-size:2rem;
+        }
+        
+    }
+    #buttonOne{
+        background:$second-color;
+    }
+}
 /*MEDIA QUERIES*/
+@media(max-width:1275px){
+    .home-container {
+        
+        #home-image{
+        transform:scale(.8);
+        position: absolute;
+        right:5%;
+        bottom:5%;
+        }
+    }
+}
 @media (max-width:950px){
     .home-container-navbar{
         display:none;
     }
     .side-menu{
         display:block;
+        width:100vw !important;
     }
     .wave{
         display:none;
     }
     .logo{
-        width:100%;
         text-align:center;
         margin:0;
         padding:0;
         a{
             color:white;
         }
+    }
+    body{
+        overflow-x:hidden !important;
+        width:100vw !important;
+    }
+    .home-container{
+        #home-image{
+            bottom:10%;
+        }
+    }
+    .home-container-hello{
+        width:70vw;
+        margin-left:0;
+        transform:translateY(220px)
     }
 }
 @media(min-width:951px){
@@ -166,6 +228,30 @@ body{
             }
         }
     }
+    .home-container{
+        #home-image{
+            bottom:7%;
+            left:20%;
+        }
+    }
+    .home-container-hello{
+        width:100vw;
+        transform:translate(0,220px);
+        h2{
+            text-align:center;
+        }
+    }
+
+    .buttons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;       
+    }
 }
 @media(max-width:576px){
     .side-menu{
@@ -177,6 +263,13 @@ body{
             li:first-child{
                 width:20%;
             }
+        }
+    }
+    .home-container{
+        #home-image{
+            bottom:4%;
+            left:7%;
+            transform: scale(.6);
         }
     }
 }

@@ -12,6 +12,7 @@ $second-color:#FC3949;
     width:100vw;
     height:100px;
     position: fixed;
+    z-index:999;
     bottom:0;
     left:0;
     background:$second-color;
@@ -64,11 +65,7 @@ body{
 .home-container{
     background:$base-color;
     width:100vw !important;
-    #home-image{
-        position: absolute;
-        right:15%;
-        bottom:8%;
-    }
+    
 }
 .logo{
     color:$base-color;
@@ -138,10 +135,13 @@ body{
     }
 }
 .home-container-hello{
-    width:35vw;
     height:30vh;
     margin-left:250px;
     margin-top:-100px;
+    display:flex;
+    .home-image{
+        margin-left:15%;
+    }
     h2{
         color:white;
         font-size:4em;
@@ -175,9 +175,9 @@ body{
         
         #home-image{
         transform:scale(.8);
-        position: absolute;
-        right:5%;
-        bottom:5%;
+        }
+        .home-image{
+            margin-left:5%;
         }
     }
 }
@@ -204,15 +204,13 @@ body{
         overflow-x:hidden !important;
         width:100vw !important;
     }
-    .home-container{
-        #home-image{
-            bottom:10%;
-        }
-    }
     .home-container-hello{
-        width:70vw;
+        width:100vw;
         margin-left:0;
-        transform:translateY(220px)
+        transform:translateY(220px);
+        .hello-text{
+            padding-left:50px;
+        }
     }
 }
 @media(min-width:951px){
@@ -229,14 +227,16 @@ body{
         }
     }
     .home-container{
-        #home-image{
-            bottom:7%;
-            left:20%;
-        }
+        height:140vh;
     }
     .home-container-hello{
-        width:100vw;
-        transform:translate(0,220px);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:0;
+        padding:0;
+        transform:translateY(400px);
         h2{
             text-align:center;
         }
@@ -265,11 +265,8 @@ body{
             }
         }
     }
-    .home-container{
-        #home-image{
-            bottom:4%;
-            left:7%;
-            transform: scale(.6);
-        }
+    .home-image{
+        margin-left:0 !important;
+        width:100%;
     }
 }

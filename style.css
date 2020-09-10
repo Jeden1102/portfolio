@@ -11,6 +11,7 @@
   width: 100vw;
   height: 100px;
   position: fixed;
+  z-index: 999;
   bottom: 0;
   left: 0;
   background: #FC3949;
@@ -77,12 +78,6 @@ body {
 .home-container {
   background: #283036;
   width: 100vw !important;
-}
-
-.home-container #home-image {
-  position: absolute;
-  right: 15%;
-  bottom: 8%;
 }
 
 .logo {
@@ -163,10 +158,16 @@ body {
 }
 
 .home-container-hello {
-  width: 35vw;
   height: 30vh;
   margin-left: 250px;
   margin-top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-container-hello .home-image {
+  margin-left: 15%;
 }
 
 .home-container-hello h2 {
@@ -206,9 +207,9 @@ body {
   .home-container #home-image {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
+  }
+  .home-container .home-image {
+    margin-left: 5%;
   }
 }
 
@@ -235,14 +236,14 @@ body {
     overflow-x: hidden !important;
     width: 100vw !important;
   }
-  .home-container #home-image {
-    bottom: 10%;
-  }
   .home-container-hello {
-    width: 70vw;
+    width: 100vw;
     margin-left: 0;
     -webkit-transform: translateY(220px);
             transform: translateY(220px);
+  }
+  .home-container-hello .hello-text {
+    padding-left: 50px;
   }
 }
 
@@ -256,14 +257,27 @@ body {
   .side-menu ul li {
     font-size: 1.5rem;
   }
-  .home-container #home-image {
-    bottom: 7%;
-    left: 20%;
+  .home-container {
+    height: 140vh;
   }
   .home-container-hello {
-    width: 100vw;
-    -webkit-transform: translate(0, 220px);
-            transform: translate(0, 220px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translateY(400px);
+            transform: translateY(400px);
   }
   .home-container-hello h2 {
     text-align: center;
@@ -300,11 +314,9 @@ body {
   .side-menu ul li:first-child {
     width: 20%;
   }
-  .home-container #home-image {
-    bottom: 4%;
-    left: 7%;
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+  .home-image {
+    margin-left: 0 !important;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

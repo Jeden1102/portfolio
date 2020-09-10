@@ -36,3 +36,5 @@ function changeSkillThree(){
     buttonTwo.style.background="white"
     buttonThree.style.background="#FC3949";
 }
+
+

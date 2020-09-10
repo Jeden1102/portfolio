@@ -66,18 +66,18 @@
 body {
   font-family: 'Adam normal';
   overflow-x: hidden !important;
-  max-width: 100vw !important;
   min-height: 200vh;
+  width: 100%;
 }
 
 .container {
-  width: 100vw !important;
   min-height: 100vh;
+  overflow-x: hidden !important;
 }
 
 .home-container {
   background: #283036;
-  width: 100vw !important;
+  overflow-x: hidden !important;
 }
 
 .logo {
@@ -234,16 +234,11 @@ body {
   }
   body {
     overflow-x: hidden !important;
-    width: 100vw !important;
   }
   .home-container-hello {
-    width: 100vw;
     margin-left: 0;
     -webkit-transform: translateY(220px);
             transform: translateY(220px);
-  }
-  .home-container-hello .hello-text {
-    padding-left: 50px;
   }
 }
 
@@ -316,7 +311,14 @@ body {
   }
   .home-image {
     margin-left: 0 !important;
-    width: 100%;
+  }
+  #home-image {
+    -webkit-transform: scale(0.6) !important;
+            transform: scale(0.6) !important;
+  }
+  .home-container-hello {
+    -webkit-transform: translateY(470px);
+            transform: translateY(470px);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -77,7 +77,7 @@ body {
 
 .home-container {
   background: #283036;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 
 .logo {

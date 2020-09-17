@@ -10,12 +10,12 @@ $second-color:#FC3949;
 /*Side Menu*/
 .side-menu{
     width:100vw;
-    height:100px;
+    height:70px;
     position: fixed;
     z-index:999;
     bottom:0;
     left:0;
-    background:$second-color;
+    background:white;
     display:none;
     transition:.6s;
     ul{
@@ -31,12 +31,12 @@ $second-color:#FC3949;
             text-align:center;
             height:100%;
         a{
-            color:white;
+            color:#283036;
             text-decoration:none;
         }
         i{
             margin:10px 0;
-            font-size:2.3rem;
+            font-size:1.8rem;
             color:$base-color;
             width:100%;
         }
@@ -51,6 +51,10 @@ $second-color:#FC3949;
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+html{
+    
+    scroll-behavior: smooth
 }
 body{
     font-family: 'Adam normal';
@@ -205,7 +209,7 @@ body{
     }
     .home-container-hello{
         margin-left:0;
-        transform:translateY(220px);
+        transform:translateY(200px);
         
     }
 }
@@ -232,7 +236,7 @@ body{
         flex-direction: column;
         margin:0;
         padding:0;
-        transform:translateY(400px);
+        transform:translateY(350px);
         h2{
             text-align:center;
         }
@@ -268,6 +272,6 @@ body{
         transform:scale(.6) !important;
     }
     .home-container-hello{
-        transform:translateY(470px);
+        transform:translateY(420px);
     }
 }

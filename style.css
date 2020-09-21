@@ -190,14 +190,14 @@ body {
   cursor: pointer;
 }
 
-.home-container-hello .skills-container {
+.home-container-hello .skill-container {
   margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.home-container-hello .skills-container .skill {
+.home-container-hello .skill-container .skill {
   color: white;
   font-size: 2rem;
 }
@@ -300,6 +300,77 @@ body {
 
 .about-container .about-me .buttons-two .button:hover:after {
   left: 0;
+}
+
+/*SKILLS */
+.skills-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-container .skills-box {
+  width: 90vw;
+  height: 100vh;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.skills-container .skills-box .skills-btns {
+  width: 300px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 0 auto;
+  -webkit-transform: translateY(80vh);
+          transform: translateY(80vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.skills-container .skills-box .skills-btns .skill-btn {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+}
+
+.skills-container .skills-box .skills-btns .skill-btn i {
+  font-size: 4rem;
+  color: white;
+}
+
+.skills-container .skills-box .skills-btns .skill-btn p {
+  color: white;
+}
+
+.skills-container .curved {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  background-color: #283036;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container .curved p {
+  font-size: 8rem;
+  color: #FC3949;
+  letter-spacing: 30px;
 }
 
 /*MEDIA QUERIES*/
@@ -448,6 +519,12 @@ body {
   .buttons-two .contact-button {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
+  }
+  .about-container, .about-me {
+    height: 120vh !important;
+  }
+  .curved p {
+    font-size: 4rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

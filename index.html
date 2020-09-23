@@ -80,17 +80,49 @@
         <div class="curved">
             <p>SKILLS</p>
         </div>
+       
         <div class="skills-box">
+            <div class="skills">
+                <div class="skill skill-front">
+                    <div class="known-skills">
+                        <h2>SKILLS I KNOW</h2>
+                        <div class="wrapper">
+                            <div class="first-row">
+                                <div class="skill-box"></div>
+                                <div class="skill-box"></div>
+                                <div class="skill-box"></div>
+                            </div>
+                            <div class="second-row">
+                                <div class="skill-box"></div>
+                                <div class="skill-box"></div>
+                                <div class="skill-box"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="future-skills">
+                        <h2>SKILLS I <span style="color:#FC3949">WILL</span> KNOW</h2>
+                    </div>
+                </div>
+                <div class="skill skill-back">
+    
+                </div>
+                <div class="skill skill-rest">
+    
+                </div>
+            </div>
+            <!--BUTTONS-->
+            
             <div class="skills-btns">
-                <button class="skill-btn front-btn">
+                <button class="skill-btn front-btn" onclick="openSkill()">
                     <i class="fab fa-html5"></i>
                     <p>Front-End</p>
                 </button>
-                <button class="skill-btn back-btn">
+                <button class="skill-btn back-btn" onclick="openSkillBack()">
                     <i class="fab fa-php"></i>
                     <p>Back-End</p>
                 </button>
-                <button class="skill-btn rest-btn">
+                <button class="skill-btn rest-btn" onclick="openSkillRest()">
                     <i class="fas fa-angle-double-right"></i>
                     <p>Other</p>
                 </button>

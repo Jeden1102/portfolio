@@ -1,17 +1,4 @@
-var burger = document.querySelector('#burger')
-var navbar = document.querySelector('.side-menu')
-var arrow = document.querySelector('.fa-arrow-left')
-let isOpened = 0;
-function openNavbar(){
-    if(!isOpened){
-        navbar.classList.add('opened-navbar')
-        arrow.classList.remove('fa-arrow-right')
-        isOpened=1;
-    }else{
-        navbar.classList.remove('opened-navbar')
-        isOpened=0;
-    }
-}
+
 
 var skill = document.querySelector('.skill')
 var buttonOne  = document.querySelector('#buttonOne')
@@ -37,4 +24,38 @@ function changeSkillThree(){
     buttonThree.style.background="#FC3949";
 }
 
+    var skillBtn = document.querySelector('.front-btn');
+    var skillBtnBack = document.querySelector('.back-btn');
+    var skillBtnRest = document.querySelector('.rest-btn');
 
+    let frontBox = document.querySelector('.skill-front');
+    let backBox = document.querySelector('.skill-back');
+    let restBox = document.querySelector('.skill-rest');
+
+function openSkill(){
+    frontBox.classList.toggle('skill-active');
+    skillBtn.classList.toggle('skill-btn-active')
+    /*REMOVING OTHERS */
+    backBox.classList.remove('skill-active');
+    skillBtnBack.classList.remove('skill-btn-active');
+    restBox.classList.remove('skill-active');
+    skillBtnRest.classList.remove('skill-btn-active');
+}
+function openSkillBack(){
+    backBox.classList.toggle('skill-active');
+    skillBtnBack.classList.toggle('skill-btn-active')
+    /*REMOVING OTHERS*/
+    frontBox.classList.remove('skill-active');
+    skillBtn.classList.remove('skill-btn-active')
+    restBox.classList.remove('skill-active');
+    skillBtnRest.classList.remove('skill-btn-active')
+}
+function openSkillRest(){
+    restBox.classList.toggle('skill-active');
+    skillBtnRest.classList.toggle('skill-btn-active')
+    /*REMOVING OTHERS */
+    frontBox.classList.remove('skill-active');
+    skillBtn.classList.remove('skill-btn-active')
+    backBox.classList.remove('skill-active');
+    skillBtnBack.classList.remove('skill-btn-active')
+}

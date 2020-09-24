@@ -293,6 +293,10 @@ body{
                         width:33.3%;
                         height:100%;
                         border-right:1px solid white;
+                        text-align: center;
+                        .fa-html5{
+                            font-size:7rem;
+                        }
                     }
                 }
             }
@@ -322,7 +326,7 @@ body{
             height:120px;
             border:1px solid red;
             margin:0 auto;
-            z-index:999;
+            z-index:9;
             display:flex;
             flex:1;
             .skill-btn{
@@ -426,6 +430,25 @@ body{
             }
         }
     }
+    .skills-box{
+        height:200vh !important;
+    }
+    .skills{
+        height:150vh !important;
+    }
+    .known-skills,.future-skills{
+        height:50% !important;
+        width:100% !important;
+    }
+    .skills-btns{
+        position: absolute;
+        bottom:100px;
+        left:35%;
+    }
+    .skill{
+        display:flex;
+        flex-direction: column;
+    }
 }
 @media(min-width:951px){
     .side-menu{
@@ -469,6 +492,9 @@ body{
     .about-me{
         width:100vw !important;
     }
+    .skills-btns{
+        left:20%;
+    }
 }
 @media(max-width:576px){
     .side-menu{
@@ -504,5 +530,22 @@ body{
         p{
             font-size:4rem !important;
         }
+    }
+    .first-row,.second-row{
+        display:flex;
+        flex-direction: column;
+    }
+    .skills-box{
+        height:450vh !important;
+    }
+    .skills{
+        height:400vh !important;
+    }
+    .skill-box{
+        width:100% !important;
+        height:33% !important;
+    }
+    .skills-btns{
+        left:2%;
     }
 }

@@ -372,6 +372,11 @@ body {
   width: 33.3%;
   height: 100%;
   border-right: 1px solid white;
+  text-align: center;
+}
+
+.skills-container .skills .skill .known-skills .wrapper .skill-box .fa-html5, .skills-container .skills .skill .future-skills .wrapper .skill-box .fa-html5 {
+  font-size: 7rem;
 }
 
 .skills-container .skills .skill-front {
@@ -403,7 +408,7 @@ body {
   height: 120px;
   border: 1px solid red;
   margin: 0 auto;
-  z-index: 999;
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,6 +531,30 @@ body {
   .about-container .about-me h2 {
     text-align: center;
   }
+  .skills-box {
+    height: 200vh !important;
+  }
+  .skills {
+    height: 150vh !important;
+  }
+  .known-skills, .future-skills {
+    height: 50% !important;
+    width: 100% !important;
+  }
+  .skills-btns {
+    position: absolute;
+    bottom: 100px;
+    left: 35%;
+  }
+  .skill {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (min-width: 951px) {
@@ -588,6 +617,9 @@ body {
   .about-me {
     width: 100vw !important;
   }
+  .skills-btns {
+    left: 20%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -624,6 +656,28 @@ body {
   }
   .curved p {
     font-size: 4rem !important;
+  }
+  .first-row, .second-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-box {
+    height: 450vh !important;
+  }
+  .skills {
+    height: 400vh !important;
+  }
+  .skill-box {
+    width: 100% !important;
+    height: 33% !important;
+  }
+  .skills-btns {
+    left: 2%;
   }
 }
 /*# sourceMappingURL=style.css.map */

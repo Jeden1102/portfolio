@@ -536,6 +536,8 @@ body {
   }
   .skills {
     height: 150vh !important;
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
   }
   .known-skills, .future-skills {
     height: 50% !important;
@@ -543,7 +545,7 @@ body {
   }
   .skills-btns {
     position: absolute;
-    bottom: 100px;
+    top: 100px;
     left: 35%;
   }
   .skill {
@@ -667,17 +669,41 @@ body {
             flex-direction: column;
   }
   .skills-box {
-    height: 450vh !important;
+    height: 350vh !important;
+    background: black;
   }
   .skills {
-    height: 400vh !important;
+    height: 250vh !important;
   }
   .skill-box {
     width: 100% !important;
     height: 33% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skill-box .fa-html5 {
+    font-size: 5rem !important;
+  }
+  .skill-box h2 {
+    font-size: 1.8rem !important;
   }
   .skills-btns {
     left: 2%;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -435,6 +435,7 @@ body{
     }
     .skills{
         height:150vh !important;
+        transform: translateY(300px);
     }
     .known-skills,.future-skills{
         height:50% !important;
@@ -442,7 +443,7 @@ body{
     }
     .skills-btns{
         position: absolute;
-        bottom:100px;
+        top:100px;
         left:35%;
     }
     .skill{
@@ -536,16 +537,31 @@ body{
         flex-direction: column;
     }
     .skills-box{
-        height:450vh !important;
+        height:350vh !important;
+        background:black;
     }
     .skills{
-        height:400vh !important;
+        height:250vh !important;
     }
     .skill-box{
         width:100% !important;
         height:33% !important;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        .fa-html5{
+            font-size:5rem !important;
+        }
+        h2{
+            font-size:1.8rem !important;
+        }
     }
     .skills-btns{
         left:2%;
     }
+    .flex{
+        display:flex;
+        flex-direction: column;
+    }
+    
 }

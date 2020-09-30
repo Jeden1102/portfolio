@@ -313,8 +313,8 @@ body {
 .skills-container .skills {
   width: 90vw;
   height: 80vh;
-  background: red;
   position: relative;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .skills-container .skills .skill {
@@ -345,7 +345,6 @@ body {
 .skills-container .skills .skill .known-skills .wrapper, .skills-container .skills .skill .future-skills .wrapper {
   width: 90%;
   height: 90%;
-  background: black;
   margin: 0 auto;
 }
 
@@ -355,14 +354,12 @@ body {
 }
 
 .skills-container .skills .skill .known-skills .wrapper .first-row, .skills-container .skills .skill .future-skills .wrapper .first-row {
-  background: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .skills-container .skills .skill .known-skills .wrapper .second-row, .skills-container .skills .skill .future-skills .wrapper .second-row {
-  background: purple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,16 +368,17 @@ body {
 .skills-container .skills .skill .known-skills .wrapper .skill-box, .skills-container .skills .skill .future-skills .wrapper .skill-box {
   width: 33.3%;
   height: 100%;
-  border-right: 1px solid white;
   text-align: center;
 }
 
-.skills-container .skills .skill .known-skills .wrapper .skill-box .fa-html5, .skills-container .skills .skill .future-skills .wrapper .skill-box .fa-html5 {
+.skills-container .skills .skill .known-skills .wrapper .skill-box i, .skills-container .skills .skill .future-skills .wrapper .skill-box i {
   font-size: 7rem;
 }
 
-.skills-container .skills .skill-front {
-  background: green;
+.skills-container .skills .skill .known-skills .wrapper .skill-box .fa-check, .skills-container .skills .skill .future-skills .wrapper .skill-box .fa-check {
+  font-size: 1rem;
+  color: #FC3949;
+  padding: 0 10px;
 }
 
 .skills-container .skills .skill-back {
@@ -399,14 +397,12 @@ body {
   width: 90vw;
   overflow: hidden;
   height: 100vh;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
 .skills-container .skills-box .skills-btns {
   width: 320px;
   height: 120px;
-  border: 1px solid red;
   margin: 0 auto;
   z-index: 9;
   display: -webkit-box;

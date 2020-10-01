@@ -255,6 +255,7 @@ body{
         height:80vh;
         position: relative;
         background:rgba(255,255,255,.5);
+        transform: translateY(20px);
         .skill{
             width:100%;
             height:100%;
@@ -292,6 +293,7 @@ body{
                         text-align: center;
                         i{
                             font-size:7rem;
+                            padding:10px 0;
                         }
                         .fa-check{
                             font-size:1rem;
@@ -301,12 +303,6 @@ body{
                     }
                 }
             }
-        }
-        .skill-back{
-            background:yellow;
-        }
-        .skill-rest{
-            background:orange;
         }
         .skill-active{
             left:0vw;
@@ -366,6 +362,180 @@ body{
          }
     }
 }
+/*CONTACT*/
+.contact-container{
+    background:$base-color;
+    position: relative;
+    overflow:hidden;
+    .wave-bottom{
+        position: absolute;
+        left:0;
+        bottom:0;
+    }
+    .end-socials{
+        width:200px;
+        height:60px;
+        position: absolute;
+        left:50px;
+        bottom:20px;
+        z-index:2;
+        display:flex;
+        i{
+            font-size:3rem;
+            color:white;
+            padding:0 10px;
+        }
+    }
+    .wrap {
+        flex: 0 1 700px;
+        margin: auto;
+        padding: 10px;
+        width:60vw;
+        transform: translateY(100px);
+      }
+      
+      .screen {
+        position: relative;
+        background: #3e3e3e;
+        border-radius: 15px;
+      }
+      
+      .screen:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+        z-index: -1;
+      }
+      
+      
+      
+      
+      .screen-body {
+        display: flex;
+      }
+      
+      .screen-body-item {
+        flex: 1;
+        padding: 50px;
+      }
+      
+      .screen-body-item.left {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .app-title {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color: $second-color;
+        font-size: 26px;
+      }
+      
+      .app-title:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 25px;
+        height: 4px;
+        background: $second-color;
+      }
+      
+      .app-contact {
+        margin-top: auto;
+        font-size: 8px;
+        color: #888;
+      }
+      
+      .app-form-group {
+        margin-bottom: 15px;
+      }
+      
+      .app-form-group.message {
+        margin-top: 40px;
+      }
+      
+      .app-form-group.buttonki {
+        margin-bottom: 0;
+        text-align: right;
+        padding:15px;
+      }
+      
+      .app-form-control {
+        width: 100%;
+        padding: 10px 0;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #666;
+        color: #ddd;
+        font-size: 14px;
+        text-transform: uppercase;
+        outline: none;
+        transition: border-color .2s;
+      }
+      
+      .app-form-control::placeholder {
+        color: #666;
+      }
+      
+      .app-form-control:focus {
+        border-bottom-color: #ddd;
+      }
+      
+      .app-form-button {
+        background: none;
+        border: none;
+        color: $second-color;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      .app-form-button:hover {
+        color: $second-color;
+      }
+      
+      @media screen and (max-width: 520px) {
+        .screen-body {
+          flex-direction: column;
+        }
+      
+        .screen-body-item.left {
+          margin-bottom: 30px;
+        }
+      
+        .app-title {
+          flex-direction: row;
+        }
+      
+        .app-title span {
+          margin-right: 12px;
+        }
+      
+        .app-title:after {
+          display: none;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .screen-body {
+          padding: 40px;
+        }
+      
+        .screen-body-item {
+          padding: 0;
+        }
+      }
+      
+}
 /*MEDIA QUERIES*/
 @media(max-width:1275px){
     .home-container {
@@ -383,8 +553,14 @@ body{
     .wrapper,.first-row,.second-row{
         width:100% !important;
     }
+    .wrap{
+        width:90vw !important;
+    }
 }
 @media (max-width:950px){
+    .end-socials{
+        bottom:80px !important;
+    }
     .home-container-navbar{
         display:none;
     }
@@ -430,7 +606,7 @@ body{
     }
     .skills{
         height:150vh !important;
-        transform: translateY(300px);
+        transform: translateY(300px) !important;
     }
     .known-skills,.future-skills{
         height:50% !important;
@@ -533,7 +709,6 @@ body{
     }
     .skills-box{
         height:350vh !important;
-        background:black;
     }
     .skills{
         height:250vh !important;

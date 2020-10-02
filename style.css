@@ -190,6 +190,11 @@ body {
   cursor: pointer;
 }
 
+.home-container-hello button:hover {
+  -webkit-box-shadow: 0 0 5px 0 #FC3949;
+          box-shadow: 0 0 5px 0 #FC3949;
+}
+
 .home-container-hello .skill-container {
   margin: 40px;
   display: -webkit-box;
@@ -276,6 +281,8 @@ body {
   -webkit-transition: .2s;
   transition: .2s;
   overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px 0px #FC3949;
+          box-shadow: 0px 0px 5px 0px #FC3949;
 }
 
 .about-container .about-me .buttons-two .button span {
@@ -420,6 +427,8 @@ body {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-box-shadow: 0 0 4px 0 white;
+          box-shadow: 0 0 4px 0 white;
 }
 
 .skills-container .skills-box .skills-btns .skill-btn i {
@@ -485,12 +494,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .contact-container .end-socials i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   padding: 0 10px;
+}
+
+.contact-container .end-socials i:hover {
+  color: #283036;
 }
 
 .contact-container .wrap {

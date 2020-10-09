@@ -59,3 +59,16 @@ function openSkillRest(){
     backBox.classList.remove('skill-active');
     skillBtnBack.classList.remove('skill-btn-active')
 }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var upButton = document.querySelector('.up-button');
+    var text = document.querySelector('.about-me');
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    upButton.style.display = "block";
+  } else {
+    upButton.style.display = "none";
+  }
+}

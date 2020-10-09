@@ -8,29 +8,36 @@
     <script src="https://kit.fontawesome.com/193f3f2978.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
+    <!--UP BUTTON-->
+    <div class="up-button">
+        <a href="#home-go">
+            <button>
+                <i class="fas fa-arrow-circle-up"></i>
+            </button>
+        </a>
+    </div>
     <!--SIDE MENU-->
     <div class="side-menu">
         <ul>
-            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fas fa-user"></i>About Me</a></li>
-            <li><a href="#"><i class="fas fa-code"></i>Technologies</a></li>
-            <li><a href="#"><i class="fas fa-phone"></i>Contact</a></li>
+            <li><a href="#home-go"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about-go"><i class="fas fa-user"></i>About Me</a></li>
+            <li><a href="#tech-go"><i class="fas fa-code"></i>Technologies</a></li>
+            <li><a href="#contact-go"><i class="fas fa-phone"></i>Contact</a></li>
         </ul>
     </div>
     
     <!--HOME SITE-->
-    <div class="home-container container">
+    <div class="home-container container" id = "home-go">
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="white" fill-opacity="1" d="M0,320L60,288C120,256,240,192,360,154.7C480,117,600,107,720,128C840,149,960,203,1080,197.3C1200,192,1320,128,1380,96L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
           </svg>
             <h1 class="logo" id="top"><a href="#">RAD <span>DESIGN</span></a></h1> 
         <div class="home-container-navbar">
             <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home-go">Home</a></li>
+                <li><a href="#about-go">About Me</a></li>
+                <li><a href="#tech-go">Technologies</a></li>
+                <li><a href="#contact-go">Contact</a></li>
             </ul>
         </div>
         
@@ -57,7 +64,7 @@
     </div>
     
     <!--ABOUT ME -->
-    <div class="container about-container">
+    <div class="container about-container" id="about-go">
         <div class="about-me">
                 <h2>Dominik Raducki</h2>
                 <p>
@@ -75,7 +82,7 @@
         </div>
     </div>
     <!--SKILLS-->
-    <div class="container skills-container">
+    <div class="container skills-container" id = "tech-go">
         
         <div class="curved">
             <p>SKILLS</p>
@@ -423,7 +430,7 @@
             
         </div>
     </div>
-    <div class="container contact-container">
+    <div class="container contact-container " id="contact-go">
         <div class="wrap">
             <div class="screen">
               <div class="screen-body">
